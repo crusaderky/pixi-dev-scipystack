@@ -12,6 +12,7 @@ test = {cmd = "spin test", cwd = "pywt"}
 doc = {cmd = "spin docs", cwd = "pywt"}
 ipython = {cmd = "spin ipython", cwd = "pywt"}
 wheel = {cmd = "python -m build -wnx -Cbuild-dir=build-whl && cp dist/*.whl ../../wheelhouse/", cwd = "pywt"}
+bench = {cmd = "spin bench", cwd = "pywt"}
 
 [dependencies]
 clang = "*"
@@ -19,7 +20,7 @@ numpy = ">=2.0.0,<3"
 meson-python = "*"
 meson = "*"
 cython = ">=3.2.0,<4"
-spin = ">=0.11,<0.12"
+spin = "*"
 python-build = "*"
 pytest = "*"
 ipython = "*"
@@ -37,6 +38,7 @@ jupytext = "*"
 pooch = "*"
 jupyterlite-sphinx = ">=0.16.2"
 jupyterlite-pyodide-kernel = "*"
+asv = "*"
 
 #[pypi-dependencies]
 #cython = { path = "/home/rgommers/code/tmp/cython" }
